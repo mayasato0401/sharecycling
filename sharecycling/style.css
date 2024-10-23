@@ -1,14 +1,12 @@
 /* pc */
 body {
+    background-color: #c0c0c0;
     color: #333;
-    background-image: url(images/backimg.png);
-    backdrop-filter: blur(3px);
-    margin: 0;
 }
 
 
 /* レスポンシブ */
-.sp {
+.np {
     background-color: #FFFFF0;
     max-width: 490px;
     margin: 0 auto;
@@ -17,7 +15,6 @@ body {
 /* ヘッダー */
 header {
     max-height: 40px;
-    position: relative;
 }
 
 li {
@@ -40,31 +37,17 @@ main {
 } 
 
 /* メニュー */
+/* .sp-nemu-open {
+    opacity: 0;
+} */
 .sp-nemu-open {
     background-color: #005AA0;
     z-index: 1000;
-    height: 350px;
+    height: 400px;
     width: 300px;
     position: absolute;
     right: 0;
     top: 0;
-    opacity: 0;
-}
-
-.sp-nemu-close {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-nav .pagemap {
-    display: block;
-    margin: 20px;
-    text-align: center;
-}
-
-nav .pagemap > li {
-    margin: 15px;
 }
 
 /* ファーストビュー */
@@ -82,8 +65,8 @@ video {
 .catchphrase {
     z-index: 2000;
     position: absolute;
-    top: 56%;
-    left: 5%;
+    top: 15%;
+    left: 3%;
     color: #FFFFF0;
 }
 
@@ -176,14 +159,22 @@ tr {
     left: -10%;
 }
 
+.price, .cyclestation {
+    opacity: 0;
+    transform: translate(0, 50%);
+    transition: 1s;
+}
+
+.show {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+
 /* 利用方法 */
 
 #use {
     margin: 50px 25px;
-}
-
-.flow {
-    margin: 0  40px;
 }
 
 .step {
@@ -210,10 +201,6 @@ tr {
     top: -12px;
     left: 10px;
     font-size: 16px;
-}
-
-.step img {
-    width: 70px;
 }
 
 .procedure {
@@ -260,7 +247,6 @@ tr {
     width: 260px;
     background-color: #ffffff;
     margin: auto;
-    padding: 10px;
 }
 
 .electronic-money, .credit {
@@ -313,7 +299,6 @@ tr {
     border-radius: 5px;
     box-shadow: 0 4px 4px rgb(0 0 0 / 2%), 0 2px 3px -2px rgba(0 0 0 / 5%);
     background-color: #fff;
-    border: solid 1px #005AA0;
 }
 
 .q-a summary {
@@ -325,6 +310,7 @@ tr {
     color: #333333;
     font-weight: 600;
     cursor: pointer;
+    border: solid 1px #005AA0;
     font-size: 14px;
 }
 
@@ -524,8 +510,7 @@ h2 {
 }
 
 h2::before {
-    content: '♦︎';
-    color: #FF7F50;
+    content: '⚠︎';
 }
 
 .item {
