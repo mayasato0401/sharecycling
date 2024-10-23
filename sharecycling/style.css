@@ -1,0 +1,523 @@
+/* pc */
+body {
+    background-color: #c0c0c0;
+    color: #333;
+}
+
+
+/* レスポンシブ */
+.np {
+    background-color: #FFFFF0;
+    max-width: 490px;
+    margin: 0 auto;
+}
+
+/* ヘッダー */
+header {
+    max-height: 40px;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.logo {
+    max-height: 40px;
+}
+
+main {
+    position: relative;
+} 
+
+/* メニュー */
+/* .sp-nemu-open {
+    opacity: 0;
+} */
+.sp-nemu-open {
+    background-color: #005AA0;
+    z-index: 1000;
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* ファーストビュー */
+#firstview {
+    position: relative;
+}
+
+video {
+    max-width: 490px;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.catchphrase {
+    z-index: 2000;
+    position: absolute;
+    top: 15%;
+    left: 3%;
+    color: #FFFFF0;
+}
+
+/* ニュース */
+#news {
+    margin: 50px auto;
+    width: 63%;
+}
+
+.title {
+    color: #005AA0;
+    font-size: 16px;
+    display: inline-block;
+    border-bottom: solid 1px #005AA0;
+    font-weight: 900;
+}
+
+.news-title {
+    font-size: 14px;
+    width: 220px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+ .news-date {
+    font-size: 14px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr {
+    height: 34px;
+    border-bottom: solid 1px #999999;
+}
+
+/* コンセプト */
+#concept {
+    background-color: #005AA0;
+    width: 100%;
+    min-height: 192px;
+}
+
+#concept > p {
+    font-size: 14px;
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+    line-height: 2.8;
+    text-align: center;
+}
+
+/* 特徴 */
+#features {
+    margin: 50px 25px;
+}
+
+#features > div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 0 40px 0;
+}
+
+.price, .cyclestation, .regions {
+    width: 185px;
+    height: 160px;
+    background-color: #ffffff;
+    box-shadow: 9px 7px 5px #a9a9a9;
+    position: relative;
+    border: solid 1px #005AA0;
+}
+
+.price p, .cyclestation p, .regions p {
+    font-size: 14px;
+    position: absolute;
+    top: 14%;
+    left: 7%;
+    text-align: center;
+    width: 165px;
+}
+
+#features  img {
+    height: 100px;
+    position: absolute;
+    top: 48%;
+    left: -10%;
+}
+
+.price, .cyclestation {
+    opacity: 0;
+    transform: translate(0, 50%);
+    transition: 1s;
+}
+
+.show {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+
+/* 利用方法 */
+
+#use {
+    margin: 50px 25px;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+}
+
+.allcentter {
+    margin: 0 auto;
+}
+
+.step-num {
+    background-color: #005AA0;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.step-num > p {
+    color: #ffffff;
+    position: absolute;
+    top: -12px;
+    left: 10px;
+    font-size: 16px;
+}
+
+.procedure {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.allcenter {
+    text-align: center;
+}
+
+.allcenter > a {
+    height: 66px;
+}
+
+.appimg {
+    width: 15%;
+}
+
+.appimg:hover {
+    opacity: 0.8;
+}
+
+.column > img {
+    flex-direction: column;
+}
+
+.arrowimg {
+    width: 4%;
+}
+
+/* 決済方法 */
+.noline {
+    border-bottom: none;
+}
+
+#settlement{
+    margin: 50px auto;
+    text-align: center;
+}
+
+.paymentmethod {
+    border:solid 1px #005AA0;
+    width: 260px;
+    background-color: #ffffff;
+    margin: auto;
+}
+
+.electronic-money, .credit {
+    text-align: center;
+}
+
+.imgfit {
+    object-fit: cover;
+    width: 15%;
+}
+
+.imgfit2 {
+    width: 30%;
+}
+
+.trainimg {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.electronic-money p, .credit > p {
+    font-size: 12px;
+    margin: 5px 20px;
+}
+
+.electronic-money {
+    border-bottom: dotted 1px #005AA0;
+}
+
+.train {
+    text-align: center;
+    border: solid 1px #D9D9D9;
+    margin: 5px;
+    padding: 5px;
+}
+
+/* QA */
+#qa {
+    margin: 50px 25px;
+}
+
+.q-a {
+    max-width: 500px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 2%), 0 2px 3px -2px rgba(0 0 0 / 5%);
+    background-color: #fff;
+}
+
+.q-a summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1em 2em 1em 3em;
+    color: #333333;
+    font-weight: 600;
+    cursor: pointer;
+    border: solid 1px #005AA0;
+    font-size: 14px;
+}
+
+.q-a summary::before,
+.q-a p::before {
+    position: absolute;
+    left: 1em;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.q-a summary::before {
+    color: #75bbff;
+    content: "Q";
+}
+
+.q-a summary::after {
+    transform: translateY(-25%) rotate(45deg);
+    width: 7px;
+    height: 7px;
+    margin-left: 10px;
+    border-bottom: 3px solid #333333b3;
+    border-right: 3px solid #333333b3;
+    content: '';
+    transition: transform .5s;
+}
+
+.q-a[open] summary::after {
+    transform: rotate(225deg);
+}
+
+.q-a p {
+    position: relative;
+    transform: translateY(-10px);
+    opacity: 0;
+    margin: 0;
+    padding: .3em 3em 1.5em;
+    color: #333;
+    transition: transform .5s, opacity .5s;
+}
+
+.q-a[open] p {
+    transform: none;
+    opacity: 1;
+    font-size: 14px;
+}
+
+.q-a p::before {
+    color: #ff8d8d;
+    line-height: 1.2;
+    content: "A";
+}
+
+.more {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.page {
+    text-decoration: none;
+    font-size: 12px;
+    margin: 20px 0;
+}
+
+.page:hover {
+    opacity: 0.8;
+}
+
+.page > button {
+    background-color: #FF7F50;
+    margin: auto;
+    width: 90px;
+    height: 26px;
+    border: none;
+    color: #fff;
+}
+
+/* ユーザーの声 */
+#review {
+    margin: 50px 0;
+}
+
+.back-white {
+    padding: 10px 25px;
+    background-color: #fff;
+}
+
+.reviewbox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.user-information {
+    text-align: center;
+    width: 39%;
+}
+
+.person {
+    width: 60%;
+}
+
+.user-information > p {
+    font-size: 12px;
+}
+
+.bubble {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 300px;
+    margin-left: 15px;
+    padding: .8em 1.2em;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    color: #333333;
+    font-size: 14px;
+}
+
+.bubble::before {
+    position: absolute;
+    left: -15px;
+    width: 15px;
+    height: 30px;
+    background-color: #f2f2f2;
+    clip-path: polygon(0 50%, 100% 0, 100% 100%);
+    content: '';
+}
+
+/* フッター */
+footer {
+    background-color: #005AA0;
+    font-size: 14px;
+    padding: 20px 12px 0 12px;
+}
+
+footer div {
+    text-align: center;
+}
+
+.pagemap a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.pagemap a:hover {
+    text-decoration: underline;
+}
+
+.pagemap {
+    justify-content: center;
+}
+
+.applogo {
+    justify-content: right;
+}
+
+.pagemap li {
+    margin: 6px 15px;
+}
+
+.applogo li {
+    margin: 15px 8px 0 8px;
+}
+
+.applogo img {
+    width: 15px;
+}
+
+/* 注意事項ページ */
+#precautions {
+    margin: 50px 25px;
+}
+
+h1 {
+    font-size: 15px;
+    background-color: #005AA0;
+    color: #fff;
+    display: inline-block;
+    padding: 4px 8px;
+    margin: 0;
+}
+
+.rule {
+    margin: 30px 0;
+}
+
+.group {
+    border: solid 3px #005AA0;
+    background-color: #fff;
+}
+
+h2 {
+    font-size: 14px;
+    margin: 0;
+}
+
+h2::before {
+    content: '⚠︎';
+}
+
+.item {
+    margin: 20px 5px;
+}
+
+.item > p {
+    font-size: 14px;
+    margin: 0;
+}
